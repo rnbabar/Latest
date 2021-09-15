@@ -36,6 +36,6 @@
       register: out
     - name: Print uptime output
       debug:
-        msg: "{{out}}"
+        msg: "{{out.stdout}}"
 ## In Ansible if value starts with a variable then it has to be double quoted.
 
