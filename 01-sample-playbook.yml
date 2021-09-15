@@ -3,6 +3,7 @@
    - all
   #hosts: all
   tasks:
-    - debug:
+    - name: Print HelloWorld
+      debug:
         msg: Hello World
 
