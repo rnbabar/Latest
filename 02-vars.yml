@@ -2,6 +2,7 @@
   hosts: all
   vars:
     URL1: play.google.com
+    URL: play.google.com
   vars_files:
     - vars.yml
   tasks:
@@ -22,3 +23,8 @@
     - name: Print Variable from CLI
       debug:
         msg: URL = {{URL5}}
+    - name: Show Variable Precedence
+      vars:
+        URL: tasks.google.com
+      debug:
+        msg: URL = {{URL}}
