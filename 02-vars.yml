@@ -24,7 +24,11 @@
       debug:
         msg: URL = {{URL5}}
     - name: Show Variable Precedence
-#      vars:
-#        URL: tasks.google.com
+      vars:
+        URL: tasks.google.com
       debug:
         msg: URL = {{URL}}
+    - name: Print Fact Variable
+      debug:
+        msg: OS = {{ansible_distribution}}
+        
