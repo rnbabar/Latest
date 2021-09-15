@@ -1,0 +1,4 @@
+- name: Hello from ROle
+  debug:
+    msg: Hello from ROle
+
