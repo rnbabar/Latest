@@ -4,8 +4,9 @@
     - name: CentOS
       debug:
         msg: CentOS
+      tags:
+        - cent
 
     - name: Ubuntu
       debug:
         msg: Ubuntu
-  
