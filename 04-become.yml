@@ -1,11 +1,15 @@
 - name: Demo on Become sudo
   hosts: all
-  become: yes
+  #become: yes
   tasks:
     - name: Get ID of user
       shell: id
       register: out
+      become: yes
 
     - name: Print
       debug:
         msg: "{{out}}"
+
+# become can be used on task level also or on play level
+# Play level become will run all the tasks as root user, However task level will run only that task.
