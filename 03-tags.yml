@@ -12,3 +12,5 @@
         msg: Ubuntu
       tags:
         - ubuntu
+
+# Tags can be on task level or also on Play level to pick which play to run
