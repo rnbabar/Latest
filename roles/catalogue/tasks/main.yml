@@ -41,6 +41,15 @@
     path: /home/roboshop/catalogue
   become_user: roboshop
 
+- name: Setup Catalogue Service File
+  copy:
+    src: systemd.service
+    dest: /etc/systemd/system/catalogue.service
 
-
+- name: Start Catalogue Service
+  systemd:
+    name: catalogue
+    state: restarted
+    enabled: yes
+    daemon_reload: yes
 
