@@ -2,6 +2,7 @@
   hosts: localhost
   vars:
     OS: centos
+    NUM: 7
   tasks:
     - name: CentOS
       debug:
@@ -11,4 +12,8 @@
       debug:
         msg: Ubuntu
       when: OS == "ubuntu"
-
+    - name: Number Condition - 1
+      debug:
+        msg: Num Con 1
+      when: NUM >= 5
+      
