@@ -26,4 +26,7 @@
     - name: If Bool1 is true
       debug:
         msg: Boo1 is True
-      when: BOOL1
+      #when: BOOL1
+      when: BOOL1 | bool
+      ## Latest versions of ansibel suggest using boolean with "| bool"
+      
