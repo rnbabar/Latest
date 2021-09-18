@@ -1,10 +1,14 @@
 - name: Demo on conditions
   hosts: localhost
+  vars:
+    OS: centos
   tasks:
     - name: CentOS
       debug:
         msg: CentOS
+      when: OS == "centos"
     - name: Ubuntu
       debug:
         msg: Ubuntu
-      
+      when: OS == "ubuntu"
+
