@@ -41,4 +41,3 @@
         msg: AND Statement
       when: NUM >= 5 and BOOL1 | bool
       # AND needs both statement to be true
-  
