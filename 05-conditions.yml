@@ -16,4 +16,7 @@
       debug:
         msg: Num Con 1
       when: NUM >= 5
-      
+    - name: Number Condition - 2
+      debug:
+        msg: Num Con 1
+      when: NUM <= 5
