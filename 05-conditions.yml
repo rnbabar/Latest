@@ -3,6 +3,7 @@
   vars:
     OS: centos
     NUM: 7
+    BOOL1: true
   tasks:
     - name: CentOS
       debug:
@@ -20,3 +21,9 @@
       debug:
         msg: Num Con 1
       when: NUM <= 5
+      ### Difference b/w number and string is, Strings are Quoted and numbers are not.
+      ### Here variable would be a starting value definetly and also it should not be quoted.
+    - name: If Bool1 is true
+      debug:
+        msg: Boo1 is True
+      when: BOOL1
