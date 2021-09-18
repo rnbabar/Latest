@@ -29,4 +29,16 @@
       #when: BOOL1
       when: BOOL1 | bool
       ## Latest versions of ansibel suggest using boolean with "| bool"
-      
+
+    - name: Multiple Statements, OR
+      debug:
+        msg: Either Or Statement
+      when: NUM >= 5 or BOOL1 | bool
+      # OR needs only one statement to be true, Not both.
+
+    - name: Multiple Statements, AND
+      debug:
+        msg: AND Statement
+      when: NUM >= 5 and BOOL1 | bool
+      # AND needs both statement to be true
+  
