@@ -5,4 +5,4 @@
   tasks:
     - name: Print file(last value) of a URL
       debug:
-        msg: FILE = {{URL | split("/")}}
+        msg: FILE = {{URL | split("/") | last }}
