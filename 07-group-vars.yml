@@ -1,0 +1,7 @@
+- name: Test on Group vars
+  hosts: sample
+  tasks:
+    - name: Demo on groups
+      debug:
+        msg: Hello
+        

@@ -1,5 +1,7 @@
 [FRONTEND]
 frontend.roboshop.internal
+[FRONTEND:vars]
+COMPONENT=frontend
 [MONGODB]
 mongodb.roboshop.internal
 [CATALOGUE]
