@@ -18,8 +18,8 @@
     src: "{{item}}.yml"
     dest: /opt/alertmanager/{{item}}.yml
   loop:
-    - alert-manager
-    
+    - alertmanager
+
 - name: Restart AlertManager Service
   systemd:
     name: alertmanager
