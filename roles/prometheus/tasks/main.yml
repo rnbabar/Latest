@@ -19,7 +19,7 @@
     dest: /opt/alertmanager/{{item}}.yml
   loop:
     - alert-manager
-    -
+    
 - name: Restart AlertManager Service
   systemd:
     name: alertmanager
