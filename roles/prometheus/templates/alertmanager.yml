@@ -12,6 +12,7 @@ receivers:
         auth_username: AKIAZHEF5S5CLWR7EGOC
         auth_password: BPQPL84bzkqGAzfcW50NbOOK2St/b4VXabPbrGawb87t
         require_tls: yes
+        send_resolved: true
 inhibit_rules:
   - source_match:
       severity: 'critical'
